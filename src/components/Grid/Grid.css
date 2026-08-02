@@ -1,0 +1,37 @@
+.bingo-grid-wrap {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.bingo-letters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(4px, 1.5vw, 10px);
+  margin-bottom: 0.6rem;
+}
+
+.bingo-letter {
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(1rem, 5vw, 1.6rem);
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.bingo-letter-struck {
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(4px, 1.5vw, 10px);
+  width: 100%;
+}
+
+@media (max-width: 360px) {
+  .bingo-grid-wrap { max-width: 100%; }
+}

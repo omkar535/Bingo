@@ -1,0 +1,48 @@
+.setup-choice {
+  margin-bottom: 1.5rem;
+}
+
+.setup-hint {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.setup-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.player-panel {
+  margin-bottom: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.game-status {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.game-status-active {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+.bingo-claim {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 480px) {
+  .setup-actions .btn,
+  .bingo-claim .btn {
+    width: 100%;
+  }
+}

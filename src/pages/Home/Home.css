@@ -1,0 +1,16 @@
+.home-subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 1.75rem;
+}
+
+.home-cards {
+  align-items: stretch;
+}
+
+.room-code-input {
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}

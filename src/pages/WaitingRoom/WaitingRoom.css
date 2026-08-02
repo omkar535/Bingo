@@ -1,0 +1,45 @@
+.waiting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.waiting-sub {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.room-code-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.75rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.room-code-box strong {
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  color: var(--color-primary);
+}
+
+.waiting-players { margin-bottom: 1.75rem; }
+
+.waiting-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .room-code-box { width: 100%; justify-content: space-between; }
+  .waiting-actions .btn { flex: 1 1 auto; }
+}

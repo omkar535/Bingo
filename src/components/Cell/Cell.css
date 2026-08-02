@@ -1,0 +1,40 @@
+.bingo-cell {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  font-weight: 700;
+  font-size: clamp(0.85rem, 4vw, 1.3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  color: var(--color-text);
+  transition: background 0.15s ease, transform 0.1s ease, border-color 0.15s ease;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+.bingo-cell-clickable {
+  cursor: pointer;
+  border-color: var(--color-primary);
+}
+
+.bingo-cell-clickable:hover {
+  background: var(--color-surface-alt);
+}
+
+.bingo-cell-clickable:active {
+  transform: scale(0.94);
+}
+
+.bingo-cell-marked {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  border-color: var(--color-primary-dark);
+}
+
+.bingo-cell:disabled {
+  cursor: not-allowed;
+}
