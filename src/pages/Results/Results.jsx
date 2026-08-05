@@ -59,7 +59,7 @@ export default function Results() {
       </div>
 
       <div className="results-actions">
-        {isHost && <Button onClick={handlePlayAgain}>Play Again</Button>}
+        <Button onClick={handlePlayAgain}>Play Again</Button>
         <Button variant="secondary" onClick={() => navigate('/')}>
           Return Home
         </Button>
